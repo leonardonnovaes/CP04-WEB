@@ -247,3 +247,49 @@ body {
 .Projeto1 img:hover{
   transform: scale(1.1);
 }
+
+.contato{
+  height: 83vh;
+  justify-content: center;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contato-form{
+  background-color: #006b7b;
+  width: 60vh;
+  border: 1px solid;
+  border-radius: 10px;
+  padding: 15px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 20rem;
+
+  
+}
+.formControl1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px;
+  justify-content: center;
+  text-align: center;
+}
+.Caixa1{
+  margin-top: 20px;
+  height: 40px;
+}
+.Caixa2{
+  margin-top: 19px;
+  padding: 8px;
+}
+
+.contato h2{
+  color: #000000;
+
+}
