@@ -54,22 +54,27 @@ body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    max-width: 800px; /* Limite máximo de largura do container */
-    gap: 20px; /* Espaço entre os cards */
-    margin-top: 50px; /* Espaço superior para distanciar do topo */
+    max-width: 60%;
+    gap: 20px; 
+    margin: 50px auto;
   }
   .card {
     border: 3px solid #000000;
     border-radius: 8px;
     padding: 20px;
     text-align: center;
-    width: 200px;
+    width: 300px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     background-color: white;
   }
   .card:hover{
     transform: scale(1.05);
   }
+  .imagem-produtos{
+    justify-content: space-around;
+    max-width: 150px;
+  }
+
   h2 {
     text-align: center;
     color: white;
