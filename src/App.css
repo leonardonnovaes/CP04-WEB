@@ -1,0 +1,215 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url(./assets/R.jfif);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+  }
+  
+  nav {
+    background-color: #006b7b;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px black;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  nav ul li {
+    display: inline;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  footer {
+    background-color: #006b7b;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    bottom: 0;
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  }
+  .produtos{
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .produtos-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 800px; /* Limite máximo de largura do container */
+    gap: 20px; /* Espaço entre os cards */
+    margin-top: 50px; /* Espaço superior para distanciar do topo */
+  }
+  .card {
+    border: 3px solid #000000;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: white;
+  }
+  .card:hover{
+    transform: scale(1.05);
+  }
+  h2 {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    margin-top: 20px;
+
+  }
+
+  .Banner img{
+    height: 60vh;
+    padding: 20px;
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border-radius: 50px;
+}
+.Banner{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    
+    
+}
+
+.navbar h1{
+    text-decoration: none;
+    color: white;
+}
+.home{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.home p{
+  font-size: 1.5em;
+  background-color: #006b7b;
+  padding: 10px;
+  border-radius: 20px;
+}
+.home h2{
+  color:rgb(255, 255, 255);
+  font-size: 2em;
+  font-weight: 2em;
+  background-color: #006b7b;
+  padding: 17px;
+  border-radius: 30px;
+}
+.ProdutoHomeCard{
+  margin: 8px;
+  padding: 10px;
+  border: #ffffff solid;
+  width: 300px;
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  transition: transform 0.3s ease-in-out;
+  color: rgb(52, 0, 0);
+  background-color: azure;
+  font-size: 1.2em;
+  border-radius: 20px;
+}
+.ProdutosHome{
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.ProdutoHomeCard:hover{
+  transform: scale(1.05);
+}
+.sobre{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+/* .CardSobre{
+  padding: 30px;
+  background-color: #006b7b;
+  color: white;
+  margin: 20px;
+  width: 500px;
+  height: 70vh;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+
+} */
+
+.CardSobre {
+  box-shadow: 0 14px 10px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  background-color: #006b7b;
+  color: white;
+  margin: 20px;
+  width: 500px;
+  height: 70vh;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+}
+
+/* Estilos para o efeito de hover nos cartões */
+.CardSobre::before {
+  position: absolute;
+  display: block;
+  width: 300px;
+ 
+  height: 40vh;
+  content: 'Lorem ipsum dolor sit amet consectetur. Ipsum amet molestie diam eget. In mi ornare gravida at orci gravida amet. Sit sed volutpat nunc amet cursus nunc. Amet tellus eget consectetur urna neque pretium.';
+  display: grid;
+  place-items: center;
+  transform: translateY(100%);
+  transition: all 0.5s;
+  opacity: 0;
+}
+
+/* Estilos para o efeito de hover nos cartões */
+.CardSobre:hover::before {
+  transform: translateY(0%);
+  background-color: #006b7b;
+  height: 70vh;
+ 
+  opacity: 1;
+}
+
