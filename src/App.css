@@ -3,10 +3,10 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-image: url(./assets/R.jfif);
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat; 
+    background-color: rgb(168, 168, 168);
+  }
+  .navbar a{
+    text-decoration: none;
   }
   
   nav {
@@ -80,21 +80,18 @@ body {
 
   .Banner img{
     height: 60vh;
-    padding: 20px;
-    width: 1100px;
+    width: 100%;
     display: flex;
     justify-content: center;
     text-align: center;
     align-items: center;
-    border-radius: 50px;
+    box-shadow: 0 4px 8px black;
 }
 .Banner{
     display: flex;
     justify-content: center;
     text-align: center;
     align-items: center;
-    
-    
 }
 
 .navbar h1{
@@ -131,6 +128,7 @@ body {
   width: 300px;
   height: 20vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   text-align: center;
   justify-content: center;
@@ -140,6 +138,7 @@ body {
   font-size: 1.2em;
   border-radius: 20px;
 }
+
 .ProdutosHome{
   padding-top: 40px;
   padding-bottom: 40px;
@@ -152,6 +151,11 @@ body {
 .ProdutoHomeCard:hover{
   transform: scale(1.05);
 }
+.ProdutoHomeCard img{
+  width: 100px;
+  height: 10vh;
+}
+
 .sobre{
   height: 100vh;
   display: flex;
@@ -159,20 +163,7 @@ body {
   text-align: center;
   align-items: center;
 }
-/* .CardSobre{
-  padding: 30px;
-  background-color: #006b7b;
-  color: white;
-  margin: 20px;
-  width: 500px;
-  height: 70vh;
-  display: flex;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  border-radius: 20px;
 
-} */
 
 .CardSobre {
   box-shadow: 0 14px 10px rgba(0, 0, 0, 0.2);
@@ -194,8 +185,7 @@ body {
   position: absolute;
   display: block;
   width: 300px;
- 
-  height: 40vh;
+  height: 4vh;
   content: 'Lorem ipsum dolor sit amet consectetur. Ipsum amet molestie diam eget. In mi ornare gravida at orci gravida amet. Sit sed volutpat nunc amet cursus nunc. Amet tellus eget consectetur urna neque pretium.';
   display: grid;
   place-items: center;
@@ -209,7 +199,46 @@ body {
   transform: translateY(0%);
   background-color: #006b7b;
   height: 70vh;
- 
   opacity: 1;
 }
+.Projetos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+}
+#TextoProjeto{
+  background-color: #006b7b;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  width: 30px;
+}
+.Projetos p{
+  background-color: #006b7b;
+  padding: 20px;
+  color: white;
+  font-size: 1.2em;
+}
+.Projeto1{
+  align-self: self-start;
+  align-items: center;
+  padding: 20px;
+}
 
+.Projeto1 p{
+  padding: 20px;
+  margin: 20px;
+}
+.Projeto1 img{
+  width:90%;
+  height: 45vh;
+  border: #000000 solid;
+  border-radius: 20px;
+}
+.Projeto1 img:hover{
+  transform: scale(1.1);
+}
